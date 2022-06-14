@@ -35,4 +35,4 @@ app.mount("/gpx", StaticFiles(directory="gpx", html = False), name="static2")
 
 
 # html=True is needed for defaulting to index.html. From https://stackoverflow.com/a/63805506/4355695
-app.mount("/", StaticFiles(directory="html", html = True), name="static")
+app.mount("/", StaticFiles(directory="docs", html = True), name="static")

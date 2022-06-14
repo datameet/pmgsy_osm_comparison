@@ -942,9 +942,7 @@ function jump2OSM(which='open') {
                 console.log(returndata);
                 z = z < 13? 13 : z;
 
-                let getUrl = window.location;
-                let baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
-                let gpxURL = `${baseUrl}/gpx/${globalBLOCK_ID}.gpx`;
+                let gpxURL = `${GPXpath}/${globalBLOCK_ID}.gpx`;
                 let url = `https://www.openstreetmap.org/edit#gpx=${gpxURL}`;
                 var win = window.open(url, '_blank');
             },
